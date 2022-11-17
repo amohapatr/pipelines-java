@@ -1,6 +1,6 @@
 import com.microsoft.demo.Demo;
 import org.junit.Test;
-//This is a test class
+//This is a test class and for Azure pipeline test
 public class MyTest {
     @Test
     public void test_method_1() {
