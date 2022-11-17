@@ -1,0 +1,40 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  name: default
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
+
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'pom.xml'
+    mavenOptions: '-Xmx3072m'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.8'
+    jdkArchitectureOption: 'x64'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    goals: 'package'
+- task: Azure Extension for TTT AutoRun7@0
+  inputs:
+    HCIConnection: 'CW01.bmc.com'
+    HCIConnectionPort: '16196'
+    UserID: 'PINAWM1'
+    Password: 'Moab22'
+    PassTicket: 'passticket'
+    TestLocationPath: 'C:\Users\amohapat\Testing\CLITestInAzureExt\Scenarios\ZENG-266377-Test.context'
+    CLIInstallationPath: 'C:\Topaz\WorkbenchCLI\20.12.02.99\'
+    Configuration: 'C:\Topaz\TotalTestConfiguration'
