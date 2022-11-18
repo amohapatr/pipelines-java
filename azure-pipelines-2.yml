@@ -35,6 +35,6 @@ steps:
     UserID: 'PINAWM1'
     Password: '$(Password)'
     PassTicket: 'passticket'
-    TestLocationPath: 'C:\Users\amohapat\Testing\CLITestInAzureExt\New folder\Scenarios\CWKTCOBX_Scenario.context'
+    TestLocationPath: 'C:\Users\amohapat\Testing\CLITestInAzureExt\New folder\Tests\Scenarios\CWKTCOBX_Scenario.context'
     CLIInstallationPath: 'C:\Topaz\WorkbenchCLI\20.12.02.99\'
     Configuration: 'C:\Topaz\TotalTestConfiguration'
