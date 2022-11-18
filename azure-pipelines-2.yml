@@ -30,7 +30,7 @@ steps:
     goals: 'package'
 - task: Azure Extension for TTT AutoRun7@0
   inputs:
-    HCIConnection: 'CW13.bmc.com'
+    HCIConnection: 'CW01.bmc.com'
     HCIConnectionPort: '16196'
     UserID: 'PINAWM1'
     Password: '$(Password)'
