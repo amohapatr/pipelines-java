@@ -40,4 +40,4 @@ steps:
     Environment: 'CW01-16196 Batch'
     Repository: 'http://vw-dtw-xat-01.adprod.bmc.com:48231/totaltestapi/'
     LocalTTTConfiguration: 'C:\Topaz\TotalTestConfiguration'
-    Configuration: 'Repository'
+    Configuration: 'LocalTTTConfiguration'
