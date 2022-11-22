@@ -28,7 +28,7 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- task: Azure Extension for TTT AutoRun11@0
+- task: Azure Extension for TTT AutoRun12@0
   inputs:
     HCIConnection: 'CW01.bmc.com'
     HCIConnectionPort: '16196'
