@@ -28,12 +28,12 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- task: Azure Extension for TTT AutoRun9@0
+- task: Azure Extension for TTT AutoRun11@0
   inputs:
     HCIConnection: 'CW01.bmc.com'
     HCIConnectionPort: '16196'
     UserID: 'PINAWM1'
-    Password: 'Moab22'
+    Password: '$(Password)'
     PassTicket: 'passticket'
     TestLocationPath: 'C:\Users\amohapat\Compuware\Workbench\workspace\ZENG-266377-POC\Tests\Scenarios\SQLSelectScenario.context'
     CLIInstallationPath: 'C:\Topaz\WorkbenchCLI\20.12.02.99\'
